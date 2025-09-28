@@ -1,0 +1,14 @@
+{
+  "name": "Tarif-Auswahl",
+  "short_name": "Tarif",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#0077cc",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }
+   
+  ]
+}
