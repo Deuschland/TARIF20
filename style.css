@@ -6,6 +6,7 @@
   --color-selected: #ff9800;
   --color-sub-selected: #f48fb1;
   --color-highlight: #e91e63;
+  --color-gros: #005fa3;
   --color-reset: #4CAF50;
   --color-reset-hover: #45a049;
   --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -115,6 +116,11 @@ body {
   color: var(--color-highlight);
 }
 
+.value.gros {
+  font-size: 1.4em;
+  color: var(--color-gros);
+}
+
 #reset-container {
   position: fixed;
   bottom: 20px;
@@ -126,6 +132,8 @@ body {
 }
 
 #reset-button {
+  width: calc(100vw - 40px);
+  justify-content: center;  
   background-color: var(--color-reset);
   color: #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -137,9 +145,11 @@ body {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+
 #reset-button:hover {
+  display: flex;	
   background-color: var(--color-reset-hover);
-  transform: scale(1.05);
+  transform: scaleY(1.05);
 }
 
 #reset-button:active {
